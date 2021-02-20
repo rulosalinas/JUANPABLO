@@ -1,0 +1,34 @@
+C:\Users\CAJA\Downloads\ej java\JuanPablo\bin\Debug\Sistema CECULD.exe.config
+C:\Users\CAJA\Downloads\ej java\JuanPablo\obj\Debug\Sistema CECULD.exe
+C:\Users\CAJA\Downloads\ej java\JuanPablo\obj\Debug\Sistema CECULD.xml
+C:\Users\CAJA\Downloads\ej java\JuanPablo\obj\Debug\Sistema CECULD.pdb
+G:\JuanPablo\bin\Debug\Sistema CECULD.exe.config
+G:\JuanPablo\bin\Debug\Sistema CECULD.exe
+G:\JuanPablo\bin\Debug\Sistema CECULD.pdb
+G:\JuanPablo\bin\Debug\Sistema CECULD.xml
+G:\JuanPablo\obj\Debug\JuanPablo.vbprojAssemblyReference.cache
+G:\JuanPablo\obj\Debug\Sistema_CECULD.frmabmalumnos.resources
+G:\JuanPablo\obj\Debug\Sistema_CECULD.frmabminscripciones.resources
+G:\JuanPablo\obj\Debug\Sistema_CECULD.frmabmtutor.resources
+G:\JuanPablo\obj\Debug\Sistema_CECULD.frmalumno.resources
+G:\JuanPablo\obj\Debug\Sistema_CECULD.Aranceles.resources
+G:\JuanPablo\obj\Debug\Sistema_CECULD.Detalle.resources
+G:\JuanPablo\obj\Debug\Sistema_CECULD.frmabmaranceles.resources
+G:\JuanPablo\obj\Debug\Sistema_CECULD.Inicio.resources
+G:\JuanPablo\obj\Debug\Sistema_CECULD.Login.resources
+G:\JuanPablo\obj\Debug\Sistema_CECULD.Resources.resources
+G:\JuanPablo\obj\Debug\Sistema_CECULD.frmabmpagos.resources
+G:\JuanPablo\obj\Debug\Sistema_CECULD.Pagos.resources
+G:\JuanPablo\obj\Debug\Sistema_CECULD.Principal.resources
+G:\JuanPablo\obj\Debug\Sistema_CECULD.frminscripciones.resources
+G:\JuanPablo\obj\Debug\Sistema_CECULD.frmtutor.resources
+G:\JuanPablo\obj\Debug\JuanPablo.vbproj.GenerateResource.cache
+G:\JuanPablo\obj\Debug\JuanPablo.vbproj.CoreCompileInputs.cache
+G:\JuanPablo\obj\Debug\Sistema CECULD.exe
+G:\JuanPablo\obj\Debug\Sistema CECULD.xml
+G:\JuanPablo\obj\Debug\Sistema CECULD.pdb
+E:\JuanPablo\bin\Debug\Sistema CECULD.exe.config
+E:\JuanPablo\obj\Debug\Sistema CECULD.exe
+E:\JuanPablo\obj\Debug\Sistema CECULD.xml
+E:\JuanPablo\obj\Debug\Sistema CECULD.pdb
+G:\JuanPablo\obj\Debug\Sistema_CECULD.frmmovimientos.resources
