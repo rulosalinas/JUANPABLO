@@ -1,7 +1,4 @@
 ﻿Public Class frmmovimientos
-    Private Sub frmmovimientos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' ----------------probando git-------
-    End Sub
     'Private Sub frmmovimientos_Load(sender As Object, e As EventArgs)
 
     'End Sub

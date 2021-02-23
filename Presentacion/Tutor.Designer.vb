@@ -29,16 +29,18 @@ Partial Class frmtutor
         Me.txtbuscar = New System.Windows.Forms.TextBox()
         Me.inexistente = New System.Windows.Forms.LinkLabel()
         Me.btncerrar = New System.Windows.Forms.Button()
-        Me.pictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.pictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnbaja = New System.Windows.Forms.Button()
         Me.btneditar = New System.Windows.Forms.Button()
         Me.btnnuevo = New System.Windows.Forms.Button()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.lblayuda = New System.Windows.Forms.Label()
-        CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtflag
@@ -52,6 +54,7 @@ Partial Class frmtutor
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Britannic Bold", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.Label1.Location = New System.Drawing.Point(322, 26)
@@ -110,27 +113,6 @@ Partial Class frmtutor
         Me.btncerrar.TabIndex = 368
         Me.btncerrar.UseVisualStyleBackColor = True
         '
-        'pictureBox2
-        '
-        Me.pictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox2.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.CECULD2
-        Me.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pictureBox2.Location = New System.Drawing.Point(727, 378)
-        Me.pictureBox2.Name = "pictureBox2"
-        Me.pictureBox2.Size = New System.Drawing.Size(119, 81)
-        Me.pictureBox2.TabIndex = 371
-        Me.pictureBox2.TabStop = False
-        '
-        'pictureBox1
-        '
-        Me.pictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pictureBox1.Location = New System.Drawing.Point(26, 379)
-        Me.pictureBox1.Name = "pictureBox1"
-        Me.pictureBox1.Size = New System.Drawing.Size(100, 80)
-        Me.pictureBox1.TabIndex = 370
-        Me.pictureBox1.TabStop = False
-        '
         'btnbaja
         '
         Me.btnbaja.BackColor = System.Drawing.SystemColors.ActiveCaption
@@ -182,6 +164,7 @@ Partial Class frmtutor
         'lblayuda
         '
         Me.lblayuda.AutoSize = True
+        Me.lblayuda.BackColor = System.Drawing.Color.Transparent
         Me.lblayuda.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblayuda.ForeColor = System.Drawing.Color.DarkOrange
         Me.lblayuda.Location = New System.Drawing.Point(287, 104)
@@ -191,11 +174,77 @@ Partial Class frmtutor
         Me.lblayuda.Text = "DOBLE CLICK PARA SELECCIONAR EL ALUMNO"
         Me.lblayuda.Visible = False
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.Escudo_de_Juan_Pablo_II
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox3.Location = New System.Drawing.Point(27, 15)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(66, 77)
+        Me.PictureBox3.TabIndex = 377
+        Me.PictureBox3.TabStop = False
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.Label5.Location = New System.Drawing.Point(620, 463)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(38, 13)
+        Me.Label5.TabIndex = 381
+        Me.Label5.Text = "SALIR"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.Label4.Location = New System.Drawing.Point(457, 463)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(58, 13)
+        Me.Label4.TabIndex = 380
+        Me.Label4.Text = "ELIMINAR"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.Label3.Location = New System.Drawing.Point(381, 463)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(47, 13)
+        Me.Label3.TabIndex = 379
+        Me.Label3.Text = "EDITAR"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.Label2.Location = New System.Drawing.Point(297, 463)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(45, 13)
+        Me.Label2.TabIndex = 378
+        Me.Label2.Text = "NUEVO"
+        '
         'frmtutor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.depositphotos_38740641_stock_photo_white_background
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(879, 489)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.lblayuda)
         Me.Controls.Add(Me.txtflag)
         Me.Controls.Add(Me.Label1)
@@ -204,8 +253,6 @@ Partial Class frmtutor
         Me.Controls.Add(Me.txtbuscar)
         Me.Controls.Add(Me.inexistente)
         Me.Controls.Add(Me.btncerrar)
-        Me.Controls.Add(Me.pictureBox2)
-        Me.Controls.Add(Me.pictureBox1)
         Me.Controls.Add(Me.btnbaja)
         Me.Controls.Add(Me.btneditar)
         Me.Controls.Add(Me.btnnuevo)
@@ -213,9 +260,8 @@ Partial Class frmtutor
         Me.Name = "frmtutor"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Tutor"
-        CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -227,11 +273,14 @@ Partial Class frmtutor
     Private WithEvents txtbuscar As System.Windows.Forms.TextBox
     Friend WithEvents inexistente As System.Windows.Forms.LinkLabel
     Private WithEvents btncerrar As System.Windows.Forms.Button
-    Private WithEvents pictureBox2 As System.Windows.Forms.PictureBox
-    Private WithEvents pictureBox1 As System.Windows.Forms.PictureBox
     Private WithEvents btnbaja As System.Windows.Forms.Button
     Private WithEvents btneditar As System.Windows.Forms.Button
     Private WithEvents btnnuevo As System.Windows.Forms.Button
     Private WithEvents datalistado As System.Windows.Forms.DataGridView
     Friend WithEvents lblayuda As System.Windows.Forms.Label
+    Private WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
 End Class

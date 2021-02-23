@@ -73,12 +73,20 @@
     <Compile Include="Datos\conexion.vb" />
     <Compile Include="Datos\falumnos.vb" />
     <Compile Include="Datos\faranceles.vb" />
+    <Compile Include="Datos\fbecas.vb" />
     <Compile Include="Datos\fdetalles.vb" />
     <Compile Include="Datos\finscripciones.vb" />
     <Compile Include="Datos\fpago.vb" />
     <Compile Include="Datos\ftutor.vb" />
+    <Compile Include="Presentacion\abmbecas.Designer.vb">
+      <DependentUpon>abmbecas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\abmbecas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Logica\valumnos.vb" />
     <Compile Include="Logica\varanceles.vb" />
+    <Compile Include="Logica\vbecas.vb" />
     <Compile Include="Logica\vdetalle.vb" />
     <Compile Include="Logica\vinscripciones.vb" />
     <Compile Include="Logica\vpagos.vb" />
@@ -123,6 +131,12 @@
       <DependentUpon>abmaranceles.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\abmaranceles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmbecas.Designer.vb">
+      <DependentUpon>frmbecas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmbecas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\frmmovimientos.Designer.vb">
@@ -192,6 +206,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Presentacion\abmbecas.resx">
+      <DependentUpon>abmbecas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\abmalumnos.resx">
       <DependentUpon>abmalumnos.vb</DependentUpon>
     </EmbeddedResource>
@@ -212,6 +229,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\abmaranceles.resx">
       <DependentUpon>abmaranceles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmbecas.resx">
+      <DependentUpon>frmbecas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmmovimientos.resx">
       <DependentUpon>frmmovimientos.vb</DependentUpon>
