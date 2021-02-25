@@ -22,6 +22,7 @@ Partial Class frmmovimientos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.txtflag = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -45,9 +46,11 @@ Partial Class frmmovimientos
         Me.btnguardaralta = New System.Windows.Forms.Button()
         Me.lblsalir = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbmovimientos.SuspendLayout()
+        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox3
@@ -109,6 +112,7 @@ Partial Class frmmovimientos
         '
         Me.datalistado.AllowUserToAddRows = False
         Me.datalistado.AllowUserToDeleteRows = False
+        Me.datalistado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.datalistado.BackgroundColor = System.Drawing.SystemColors.Control
         Me.datalistado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -222,7 +226,7 @@ Partial Class frmmovimientos
         '
         Me.Label14.AutoSize = True
         Me.Label14.BackColor = System.Drawing.Color.Transparent
-        Me.Label14.Location = New System.Drawing.Point(420, 76)
+        Me.Label14.Location = New System.Drawing.Point(425, 57)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(43, 13)
         Me.Label14.TabIndex = 707
@@ -231,7 +235,7 @@ Partial Class frmmovimientos
         'lblnumcaja
         '
         Me.lblnumcaja.AutoSize = True
-        Me.lblnumcaja.Location = New System.Drawing.Point(436, 95)
+        Me.lblnumcaja.Location = New System.Drawing.Point(441, 76)
         Me.lblnumcaja.Name = "lblnumcaja"
         Me.lblnumcaja.Size = New System.Drawing.Size(13, 13)
         Me.lblnumcaja.TabIndex = 706
@@ -292,6 +296,10 @@ Partial Class frmmovimientos
         Me.Label5.TabIndex = 713
         Me.Label5.Text = "ELIMINAR"
         '
+        'erroricono
+        '
+        Me.erroricono.ContainerControl = Me
+        '
         'frmmovimientos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -320,6 +328,7 @@ Partial Class frmmovimientos
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gbmovimientos.ResumeLayout(False)
         Me.gbmovimientos.PerformLayout()
+        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -348,4 +357,5 @@ Partial Class frmmovimientos
     Friend WithEvents lblsalir As Label
     Friend WithEvents cbxtipomov As ComboBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents erroricono As ErrorProvider
 End Class

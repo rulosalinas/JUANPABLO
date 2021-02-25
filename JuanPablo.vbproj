@@ -76,8 +76,10 @@
     <Compile Include="Datos\fbecas.vb" />
     <Compile Include="Datos\fdetalles.vb" />
     <Compile Include="Datos\finscripciones.vb" />
+    <Compile Include="Datos\fmovimientos.vb" />
     <Compile Include="Datos\fpago.vb" />
     <Compile Include="Datos\ftutor.vb" />
+    <Compile Include="Logica\vmovimientos.vb" />
     <Compile Include="Presentacion\abmbecas.Designer.vb">
       <DependentUpon>abmbecas.vb</DependentUpon>
     </Compile>

@@ -114,6 +114,7 @@ Public Class abmbecas
                     btnguardarbaja.Visible = False
                     lblbaja.Visible = False
                     dtfinbeca.Enabled = False
+                    txtestado.BackColor = Color.Lime
                     Me.Close()
 
                 Else

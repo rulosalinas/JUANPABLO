@@ -55,7 +55,7 @@ Public Class fbecas
     Public Function editar(ByVal dts As vbecas) As Boolean
         Try
             conectado()
-            cmd = New SqlCommand("modificar_beca")
+            cmd = New SqlCommand("editar_beca")
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 

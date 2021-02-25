@@ -149,7 +149,7 @@
                 End If
 
             Catch ex As Exception
-                MsgBox("Error Nuevp Tutor" + ex.Message)
+                MsgBox("Error Nuevo Tutor" + ex.Message)
             End Try
         Else
             MessageBox.Show("Falta ingresar algunos datos", "Guardando Registros", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -215,7 +215,7 @@
             End If
 
         Catch ex As Exception
-            MsgBox("Error Editar Tutor" + ex.Message)
+            MsgBox("Error Eliminar Tutor" + ex.Message)
         End Try
 
     End Sub

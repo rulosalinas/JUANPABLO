@@ -106,6 +106,7 @@
         frm.lblbaja.Visible = True
         frm.btnguardarbaja.Visible = True
         frm.dtfinbeca.Enabled = True
+        frm.txtestado.BackColor = Color.Red
         frm.ShowDialog()
         mostrar()
     End Sub

@@ -43,6 +43,7 @@ Partial Class abmbecas
         Me.lblnuevo = New System.Windows.Forms.Label()
         Me.label17 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnbuscaralu = New System.Windows.Forms.Button()
         Me.txtnombre = New System.Windows.Forms.TextBox()
         Me.lblbaja = New System.Windows.Forms.Label()
         Me.btnguardaralta = New System.Windows.Forms.Button()
@@ -50,7 +51,6 @@ Partial Class abmbecas
         Me.btnguardarbaja = New System.Windows.Forms.Button()
         Me.btncerrar = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.btnbuscaralu = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -175,8 +175,10 @@ Partial Class abmbecas
         '
         'txtidbeca
         '
+        Me.txtidbeca.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtidbeca.Location = New System.Drawing.Point(49, 19)
         Me.txtidbeca.Name = "txtidbeca"
+        Me.txtidbeca.ReadOnly = True
         Me.txtidbeca.Size = New System.Drawing.Size(44, 20)
         Me.txtidbeca.TabIndex = 409
         '
@@ -195,9 +197,11 @@ Partial Class abmbecas
         '
         'txtidalumno
         '
+        Me.txtidalumno.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtidalumno.Location = New System.Drawing.Point(140, 19)
         Me.txtidalumno.MaxLength = 8
         Me.txtidalumno.Name = "txtidalumno"
+        Me.txtidalumno.ReadOnly = True
         Me.txtidalumno.Size = New System.Drawing.Size(52, 20)
         Me.txtidalumno.TabIndex = 413
         '
@@ -264,10 +268,24 @@ Partial Class abmbecas
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos del Alumno"
         '
+        'btnbuscaralu
+        '
+        Me.btnbuscaralu.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.buscar
+        Me.btnbuscaralu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnbuscaralu.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnbuscaralu.Location = New System.Drawing.Point(436, 17)
+        Me.btnbuscaralu.Name = "btnbuscaralu"
+        Me.btnbuscaralu.Size = New System.Drawing.Size(23, 23)
+        Me.btnbuscaralu.TabIndex = 451
+        Me.btnbuscaralu.UseVisualStyleBackColor = True
+        Me.btnbuscaralu.Visible = False
+        '
         'txtnombre
         '
+        Me.txtnombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtnombre.Location = New System.Drawing.Point(246, 19)
         Me.txtnombre.Name = "txtnombre"
+        Me.txtnombre.ReadOnly = True
         Me.txtnombre.Size = New System.Drawing.Size(177, 20)
         Me.txtnombre.TabIndex = 410
         '
@@ -338,18 +356,6 @@ Partial Class abmbecas
         Me.PictureBox3.Size = New System.Drawing.Size(66, 77)
         Me.PictureBox3.TabIndex = 446
         Me.PictureBox3.TabStop = False
-        '
-        'btnbuscaralu
-        '
-        Me.btnbuscaralu.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.buscar
-        Me.btnbuscaralu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnbuscaralu.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnbuscaralu.Location = New System.Drawing.Point(436, 17)
-        Me.btnbuscaralu.Name = "btnbuscaralu"
-        Me.btnbuscaralu.Size = New System.Drawing.Size(23, 23)
-        Me.btnbuscaralu.TabIndex = 451
-        Me.btnbuscaralu.UseVisualStyleBackColor = True
-        Me.btnbuscaralu.Visible = False
         '
         'abmbecas
         '
