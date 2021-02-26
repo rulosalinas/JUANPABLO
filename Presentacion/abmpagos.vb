@@ -331,5 +331,11 @@
         End Try
     End Sub
 
-
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim frm As New frmmovimientos
+        frm.txtflag.Text = "1"
+        frm.lblnumcaja.Text = lblnumcaja.Text
+        AddOwnedForm(frm)
+        frm.ShowDialog()
+    End Sub
 End Class

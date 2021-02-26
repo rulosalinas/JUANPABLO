@@ -54,8 +54,12 @@ Partial Class frmabmtutor
         Me.txttelefono = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.cbxparentesco = New System.Windows.Forms.ComboBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.lblsalir = New System.Windows.Forms.Label()
+        Me.lblguardar = New System.Windows.Forms.Label()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'erroricono
@@ -65,6 +69,7 @@ Partial Class frmabmtutor
         'lblbaja
         '
         Me.lblbaja.AutoSize = True
+        Me.lblbaja.BackColor = System.Drawing.Color.Transparent
         Me.lblbaja.Font = New System.Drawing.Font("Britannic Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblbaja.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.lblbaja.Location = New System.Drawing.Point(255, 53)
@@ -78,6 +83,7 @@ Partial Class frmabmtutor
         'lblmodificar
         '
         Me.lblmodificar.AutoSize = True
+        Me.lblmodificar.BackColor = System.Drawing.Color.Transparent
         Me.lblmodificar.Font = New System.Drawing.Font("Britannic Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblmodificar.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.lblmodificar.Location = New System.Drawing.Point(252, 53)
@@ -91,6 +97,7 @@ Partial Class frmabmtutor
         'lblnuevo
         '
         Me.lblnuevo.AutoSize = True
+        Me.lblnuevo.BackColor = System.Drawing.Color.Transparent
         Me.lblnuevo.Font = New System.Drawing.Font("Britannic Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblnuevo.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.lblnuevo.Location = New System.Drawing.Point(268, 53)
@@ -195,7 +202,7 @@ Partial Class frmabmtutor
         '
         Me.btncerrar.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.Vista__68_
         Me.btncerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btncerrar.Location = New System.Drawing.Point(390, 335)
+        Me.btncerrar.Location = New System.Drawing.Point(390, 330)
         Me.btncerrar.Name = "btncerrar"
         Me.btncerrar.Size = New System.Drawing.Size(60, 60)
         Me.btncerrar.TabIndex = 393
@@ -205,7 +212,7 @@ Partial Class frmabmtutor
         '
         Me.btnguardaralta.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.guardar
         Me.btnguardaralta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnguardaralta.Location = New System.Drawing.Point(199, 335)
+        Me.btnguardaralta.Location = New System.Drawing.Point(199, 330)
         Me.btnguardaralta.Name = "btnguardaralta"
         Me.btnguardaralta.Size = New System.Drawing.Size(60, 60)
         Me.btnguardaralta.TabIndex = 392
@@ -216,7 +223,7 @@ Partial Class frmabmtutor
         '
         Me.btnguardaredicion.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.guardar
         Me.btnguardaredicion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnguardaredicion.Location = New System.Drawing.Point(199, 335)
+        Me.btnguardaredicion.Location = New System.Drawing.Point(199, 330)
         Me.btnguardaredicion.Name = "btnguardaredicion"
         Me.btnguardaredicion.Size = New System.Drawing.Size(60, 60)
         Me.btnguardaredicion.TabIndex = 395
@@ -227,7 +234,7 @@ Partial Class frmabmtutor
         '
         Me.btnguardarbaja.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.guardar
         Me.btnguardarbaja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnguardarbaja.Location = New System.Drawing.Point(199, 335)
+        Me.btnguardarbaja.Location = New System.Drawing.Point(199, 330)
         Me.btnguardarbaja.Name = "btnguardarbaja"
         Me.btnguardarbaja.Size = New System.Drawing.Size(60, 60)
         Me.btnguardarbaja.TabIndex = 394
@@ -344,11 +351,51 @@ Partial Class frmabmtutor
         Me.cbxparentesco.Size = New System.Drawing.Size(186, 21)
         Me.cbxparentesco.TabIndex = 408
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.Escudo_de_Juan_Pablo_II
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox3.Location = New System.Drawing.Point(21, 12)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(66, 77)
+        Me.PictureBox3.TabIndex = 409
+        Me.PictureBox3.TabStop = False
+        '
+        'lblsalir
+        '
+        Me.lblsalir.AutoSize = True
+        Me.lblsalir.BackColor = System.Drawing.Color.Transparent
+        Me.lblsalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsalir.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.lblsalir.Location = New System.Drawing.Point(405, 393)
+        Me.lblsalir.Name = "lblsalir"
+        Me.lblsalir.Size = New System.Drawing.Size(38, 13)
+        Me.lblsalir.TabIndex = 411
+        Me.lblsalir.Text = "SALIR"
+        '
+        'lblguardar
+        '
+        Me.lblguardar.AutoSize = True
+        Me.lblguardar.BackColor = System.Drawing.Color.Transparent
+        Me.lblguardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblguardar.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.lblguardar.Location = New System.Drawing.Point(198, 393)
+        Me.lblguardar.Name = "lblguardar"
+        Me.lblguardar.Size = New System.Drawing.Size(61, 13)
+        Me.lblguardar.TabIndex = 410
+        Me.lblguardar.Text = "GUARDAR"
+        '
         'frmabmtutor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.depositphotos_38740641_stock_photo_white_background
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(664, 410)
+        Me.Controls.Add(Me.lblsalir)
+        Me.Controls.Add(Me.lblguardar)
+        Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.cbxparentesco)
         Me.Controls.Add(Me.txttelefono)
         Me.Controls.Add(Me.Label6)
@@ -377,6 +424,7 @@ Partial Class frmabmtutor
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -412,4 +460,7 @@ Partial Class frmabmtutor
     Public WithEvents txtnombre3 As System.Windows.Forms.TextBox
     Public WithEvents txtnombre2 As System.Windows.Forms.TextBox
     Public WithEvents txttelefono3 As System.Windows.Forms.TextBox
+    Private WithEvents PictureBox3 As PictureBox
+    Friend WithEvents lblsalir As Label
+    Friend WithEvents lblguardar As Label
 End Class

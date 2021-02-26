@@ -32,3 +32,31 @@ E:\JuanPablo\obj\Debug\Sistema CECULD.exe
 E:\JuanPablo\obj\Debug\Sistema CECULD.xml
 E:\JuanPablo\obj\Debug\Sistema CECULD.pdb
 G:\JuanPablo\obj\Debug\Sistema_CECULD.frmmovimientos.resources
+D:\visual\JuanPablo\bin\Debug\Sistema CECULD.exe.config
+D:\visual\JuanPablo\bin\Debug\Sistema CECULD.exe
+D:\visual\JuanPablo\bin\Debug\Sistema CECULD.pdb
+D:\visual\JuanPablo\bin\Debug\Sistema CECULD.xml
+D:\visual\JuanPablo\obj\Debug\JuanPablo.vbprojAssemblyReference.cache
+D:\visual\JuanPablo\obj\Debug\Sistema_CECULD.abmbecas.resources
+D:\visual\JuanPablo\obj\Debug\Sistema_CECULD.frmabmalumnos.resources
+D:\visual\JuanPablo\obj\Debug\Sistema_CECULD.frmabminscripciones.resources
+D:\visual\JuanPablo\obj\Debug\Sistema_CECULD.frmabmtutor.resources
+D:\visual\JuanPablo\obj\Debug\Sistema_CECULD.frmalumno.resources
+D:\visual\JuanPablo\obj\Debug\Sistema_CECULD.Aranceles.resources
+D:\visual\JuanPablo\obj\Debug\Sistema_CECULD.Detalle.resources
+D:\visual\JuanPablo\obj\Debug\Sistema_CECULD.frmabmaranceles.resources
+D:\visual\JuanPablo\obj\Debug\Sistema_CECULD.frmbecas.resources
+D:\visual\JuanPablo\obj\Debug\Sistema_CECULD.frmmovimientos.resources
+D:\visual\JuanPablo\obj\Debug\Sistema_CECULD.Inicio.resources
+D:\visual\JuanPablo\obj\Debug\Sistema_CECULD.Login.resources
+D:\visual\JuanPablo\obj\Debug\Sistema_CECULD.Resources.resources
+D:\visual\JuanPablo\obj\Debug\Sistema_CECULD.frmabmpagos.resources
+D:\visual\JuanPablo\obj\Debug\Sistema_CECULD.Pagos.resources
+D:\visual\JuanPablo\obj\Debug\Sistema_CECULD.Principal.resources
+D:\visual\JuanPablo\obj\Debug\Sistema_CECULD.frminscripciones.resources
+D:\visual\JuanPablo\obj\Debug\Sistema_CECULD.frmtutor.resources
+D:\visual\JuanPablo\obj\Debug\JuanPablo.vbproj.GenerateResource.cache
+D:\visual\JuanPablo\obj\Debug\JuanPablo.vbproj.CoreCompileInputs.cache
+D:\visual\JuanPablo\obj\Debug\Sistema CECULD.exe
+D:\visual\JuanPablo\obj\Debug\Sistema CECULD.xml
+D:\visual\JuanPablo\obj\Debug\Sistema CECULD.pdb

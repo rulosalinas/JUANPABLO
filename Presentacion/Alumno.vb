@@ -1,6 +1,4 @@
-﻿Imports System.Data
-Imports System.Data.SqlClient
-
+﻿
 Public Class frmalumno
     Private dt As New DataTable
     Private Sub frmalumno_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -234,18 +232,18 @@ Public Class frmalumno
             Else
                 MessageBox.Show("El Alumno no Puede ser Inscripto por que encuentra Inactivo", "Cargando Registros", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
-            'ElseIf txtflag.Text = "2" Then
-            '    Dim frm As frmabmpagos = CType(Owner, frmabmpagos)
 
-            '    frm.txtidalumno.Text = datalistado.SelectedCells.Item(0).Value.ToString
-            '    frm.txtdni.Text = datalistado.SelectedCells.Item(2).Value.ToString
-            '    frm.txtnombre.Text = datalistado.SelectedCells.Item(3).Value.ToString + ", " + datalistado.SelectedCells.Item(4).Value.ToString
-            '    frm.txtnivel.Text = datalistado.SelectedCells.Item(9).Value.ToString
-            '    frm.txtcurso.Text = datalistado.SelectedCells.Item(13).Value.ToString
-            '    frm.txtdivision.Text = datalistado.SelectedCells.Item(15).Value.ToString
-            '    Me.txtflag.Text = "0"
-            '    Me.lblayuda.Visible = False
-            '    Me.Close()
+        ElseIf txtflag.Text = "2" Then
+            Dim frm As abmbecas = CType(Owner, abmbecas)
+
+            frm.txtidalumno.Text = datalistado.SelectedCells.Item(0).Value.ToString
+            frm.txtnombre.Text = datalistado.SelectedCells.Item(1).Value.ToString + ", " + datalistado.SelectedCells.Item(2).Value.ToString
+
+            Me.txtflag.Text = "0"
+            Me.lblayuda.Visible = False
+            Me.Close()
+        Else
+            MessageBox.Show("El Alumno no Puede ser Becado por que encuentra Inactivo", "Cargando Registros", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
 
