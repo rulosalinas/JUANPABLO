@@ -133,45 +133,61 @@ Public Class fpago
             desconectado()
         End Try
     End Function
-    'Public Function generar_codigo() As Integer
-    '    Try
-    '        conectado()
-    '        cmd = New SqlCommand("genear_codigopago")
-    '        Dim param As New SqlParameter("@codigo", SqlDbType.Int)
-    '        param.Direction = ParameterDirection.Output
-    '        With cmd
-    '            .CommandType = CommandType.StoredProcedure
-    '            .Parameters.Add(param)
-    '            .ExecuteNonQuery()
-    '            Return .Parameters("@codigo").Value
-    '        End With
-    '    Catch ex As Exception
-    '        MsgBox(ex.Message)
-    '        Return 0
-    '    End Try
-    'End Function
-    'Public Function generar_codigo() As Integer
-    '    Try
-    '        conectado()
-    '        cmd = New SqlCommand("generar_codigopago")
-    '        cmd.CommandType = CommandType.StoredProcedure
-    '        cmd.Connection = cnn
+    Public Function obtenercuotaspagadas(ByVal idalu As Integer, ByVal nombrearancel As String) As Boolean
+        Try
+            conectado()
+            cmd = New SqlCommand("buscar_cuota")
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = cnn
 
-    '        cmd.Parameters.Add("@codigo", SqlDbType.VarChar, 100).Direction = 2
+            cmd.Parameters.AddWithValue("@idalu", idalu)
+            cmd.Parameters.AddWithValue("@nombrearancel", nombrearancel)
 
-    '        If cmd.ExecuteNonQuery Then
-    '            Dim Cod As String = cmd.Parameters("@codigo").Value.ToString
+            Dim lector As SqlDataReader
+            lector = cmd.ExecuteReader
 
-    '            Return cmd.Parameters("@codigo").Value
-    '        Else
-    '            Return False
-    '        End If
+            If lector.HasRows Then
+                lector.Close()
+                Return True
+            Else
+                lector.Close()
+                Return False
+            End If
 
-    '    Catch ex As Exception
-    '        MsgBox(ex.Message)
-    '        Return False
-    '    Finally
-    '        desconectado()
-    '    End Try
-    'End Function
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            desconectado()
+        End Try
+    End Function
+    Public Function cuotasboton(ByVal idalu As Integer, ByVal nombrearancel As String) As DataTable
+        Try
+            conectado()
+            cmd = New SqlCommand("buscar_cuota")
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = cnn
+
+            cmd.Parameters.AddWithValue("@idalu", idalu)
+            cmd.Parameters.AddWithValue("@nombrearancel", nombrearancel)
+
+            'Dim lector As SqlDataReader
+            Dim dt As New DataTable
+            Dim da As New SqlDataAdapter(cmd)
+
+            If cmd.ExecuteNonQuery Then
+                da.Fill(dt)
+                Return dt
+            Else
+                Return Nothing
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            desconectado()
+        End Try
+    End Function
+
 End Class

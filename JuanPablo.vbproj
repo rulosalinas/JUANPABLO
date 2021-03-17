@@ -79,6 +79,11 @@
     <Compile Include="Datos\fmovimientos.vb" />
     <Compile Include="Datos\fpago.vb" />
     <Compile Include="Datos\ftutor.vb" />
+    <Compile Include="JUANPABLODataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JUANPABLODataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Logica\vmovimientos.vb" />
     <Compile Include="Presentacion\abmbecas.Designer.vb">
       <DependentUpon>abmbecas.vb</DependentUpon>
@@ -265,8 +270,20 @@
     <EmbeddedResource Include="Presentacion\Tutor.resx">
       <DependentUpon>Tutor.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Report1.rdlc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="JUANPABLODataSet.xsc">
+      <DependentUpon>JUANPABLODataSet.xsd</DependentUpon>
+    </None>
+    <None Include="JUANPABLODataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JUANPABLODataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JUANPABLODataSet.xss">
+      <DependentUpon>JUANPABLODataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -305,9 +322,7 @@
   <ItemGroup>
     <None Include="imagenes\Vista %2868%29.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Reportes\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\find_users_applications_search_2908.png" />
   </ItemGroup>
@@ -397,6 +412,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cajao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quitar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -63,6 +63,26 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property add() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("add", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property add1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("add1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Agregar() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Agregar", resourceCulture)
@@ -456,6 +476,16 @@ Namespace My.Resources
         Friend ReadOnly Property Printer_blue() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Printer-blue", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property quitar() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("quitar", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

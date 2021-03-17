@@ -22,6 +22,16 @@ Sistema CECULD
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="P:Sistema_CECULD.My.Resources.Resources.add">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Sistema_CECULD.My.Resources.Resources.add1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Sistema_CECULD.My.Resources.Resources.Agregar">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -218,6 +228,11 @@ Sistema CECULD
 </summary>
 </member>
 <member name="P:Sistema_CECULD.My.Resources.Resources.Printer_blue">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Sistema_CECULD.My.Resources.Resources.quitar">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

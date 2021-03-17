@@ -1,6 +1,7 @@
 ﻿Public Class vdetalle
-    Dim iddetalle, idpago, idarancel, cantidad As Integer
+    Dim iddetalle, idpago, idarancel, cantidad, idalumno, año As Integer
     Dim precio, descuento As Double
+
     Public Property giddetalle
         Get
             Return iddetalle
@@ -50,18 +51,36 @@
             descuento = value
         End Set
     End Property
+    Public Property gidalumno
+        Get
+            Return idalumno
+        End Get
+        Set(value)
+            idalumno = value
+        End Set
+    End Property
+    Public Property gaño
+        Get
+            Return año
+        End Get
+        Set(value)
+            año = value
+        End Set
+    End Property
 
     Public Sub New()
 
     End Sub
 
-    Public Sub New(ByVal idpago As Integer, ByVal iddetalle As Integer, ByVal cantidad As Integer, ByVal idarancel As Integer, ByVal precio As Double, ByVal descuento As Double)
+    Public Sub New(ByVal idpago As Integer, ByVal iddetalle As Integer, ByVal cantidad As Integer, ByVal idarancel As Integer, ByVal precio As Double, ByVal descuento As Double, ByVal idalumno As Integer, ByVal año As Integer)
         gidpago = idpago
         giddetalle = iddetalle
         gidarancel = idarancel
         gcantidad = cantidad
         gprecio = precio
         gdescuento = descuento
+        gidalumno = idalumno
+        gaño = año
 
     End Sub
 End Class

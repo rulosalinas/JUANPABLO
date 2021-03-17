@@ -112,7 +112,6 @@
                 MessageBox.Show("El Arancel Fue Eliminado Correctamente", "Modificando Registros", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
                 limpiar()
-                limpiar()
                 lblbaja.Visible = False
                 btnguardarbaja.Visible = False
                 Me.Close()

@@ -77,30 +77,6 @@ Public Class fdetalles
         End Try
     End Function
 
-    'Public Function buscar(ByVal opcion As String, ByVal dato As String, ByVal dg As DataGridView) As DataTable
-    '    Try
-    '        conectado()
-    '        cmd = New SqlCommand("buscar_detalle")
-    '        cmd.CommandType = CommandType.StoredProcedure
-    '        cmd.Connection = cnn
-    '        cmd.Parameters.AddWithValue("@opcion", opcion)
-    '        cmd.Parameters.AddWithValue("@dato", dato)
-
-    '        If cmd.ExecuteNonQuery Then
-    '            Dim dt As New DataTable
-    '            Dim da As New SqlDataAdapter(cmd)
-    '            da.Fill(dt)
-    '            Return dt
-    '        Else
-    '            Return Nothing
-    '        End If
-    '    Catch ex As Exception
-    '        MsgBox(ex.Message)
-    '        Return Nothing
-    '    Finally
-    '        desconectado()
-    '    End Try
-    'End Function
     Public Function insertar(ByVal dts As vdetalle) As Boolean
         Try
             conectado()
@@ -113,8 +89,15 @@ Public Class fdetalles
             cmd.Parameters.AddWithValue("@cantidad", dts.gcantidad)
             cmd.Parameters.AddWithValue("@precio", dts.gprecio)
             cmd.Parameters.AddWithValue("@descuento", dts.gdescuento)
+            cmd.Parameters.AddWithValue("@idalu", dts.gidalumno)
+            cmd.Parameters.AddWithValue("@año", dts.gaño)
+            cmd.Parameters.Add("@mensaje", SqlDbType.VarChar, 100).Direction = 2
 
             If cmd.ExecuteNonQuery Then
+                Dim mensaje As String = cmd.Parameters("@mensaje").Value.ToString
+                If mensaje <> "" Then
+                    MessageBox.Show(mensaje, "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
+                End If
                 Return True
             Else
                 Return False
@@ -146,6 +129,31 @@ Public Class fdetalles
         Catch ex As Exception
             MsgBox(ex.Message)
             Return False
+        Finally
+            desconectado()
+        End Try
+    End Function
+
+    Public Function buscararancel(ByVal idarancel As Integer) As DataTable
+        Try
+            conectado()
+            cmd = New SqlCommand("buscar_arancel")
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = cnn
+            cmd.Parameters.AddWithValue("@idarancel", idarancel)
+
+
+            If cmd.ExecuteNonQuery Then
+                Dim dt As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dt)
+                Return dt
+            Else
+                Return Nothing
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
         Finally
             desconectado()
         End Try

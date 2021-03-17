@@ -23,9 +23,9 @@ Partial Class frmabmpagos
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.txtdni = New System.Windows.Forms.TextBox()
         Me.Label43 = New System.Windows.Forms.Label()
         Me.txtnombre = New System.Windows.Forms.TextBox()
@@ -39,7 +39,6 @@ Partial Class frmabmpagos
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtiddetalle = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.inexistente = New System.Windows.Forms.LinkLabel()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.lblnuevo = New System.Windows.Forms.Label()
@@ -64,23 +63,24 @@ Partial Class frmabmpagos
         Me.Label7 = New System.Windows.Forms.Label()
         Me.btnagregaralumno = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.txtcantidad = New System.Windows.Forms.NumericUpDown()
         Me.btnagregaritem = New System.Windows.Forms.Button()
+        Me.btndiciembre = New System.Windows.Forms.Button()
+        Me.btnmarzo = New System.Windows.Forms.Button()
+        Me.btnnoviembre = New System.Windows.Forms.Button()
+        Me.btnabril = New System.Windows.Forms.Button()
+        Me.btnoctubre = New System.Windows.Forms.Button()
+        Me.btnmayo = New System.Windows.Forms.Button()
+        Me.btnseptiembre = New System.Windows.Forms.Button()
+        Me.btnjunio = New System.Windows.Forms.Button()
+        Me.btnagosto = New System.Windows.Forms.Button()
+        Me.btnjulio = New System.Windows.Forms.Button()
         Me.btnagregararancel = New System.Windows.Forms.Button()
         Me.btnquitar = New System.Windows.Forms.Button()
         Me.lblhora = New System.Windows.Forms.Label()
         Me.lblfecha = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.btnmarzo = New System.Windows.Forms.Button()
-        Me.btnabril = New System.Windows.Forms.Button()
-        Me.btnmayo = New System.Windows.Forms.Button()
-        Me.btnjunio = New System.Windows.Forms.Button()
-        Me.btnjulio = New System.Windows.Forms.Button()
-        Me.btnagosto = New System.Windows.Forms.Button()
-        Me.btnseptiembre = New System.Windows.Forms.Button()
-        Me.btnoctubre = New System.Windows.Forms.Button()
-        Me.btnnoviembre = New System.Windows.Forms.Button()
-        Me.btndiciembre = New System.Windows.Forms.Button()
         Me.lblsalir = New System.Windows.Forms.Label()
         Me.lblguardar = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -214,7 +214,7 @@ Partial Class frmabmpagos
         '
         'txtiddetalle
         '
-        Me.txtiddetalle.Location = New System.Drawing.Point(62, 24)
+        Me.txtiddetalle.Location = New System.Drawing.Point(76, 59)
         Me.txtiddetalle.Name = "txtiddetalle"
         Me.txtiddetalle.Size = New System.Drawing.Size(47, 20)
         Me.txtiddetalle.TabIndex = 348
@@ -222,60 +222,48 @@ Partial Class frmabmpagos
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(5, 28)
+        Me.Label3.Location = New System.Drawing.Point(19, 63)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(52, 13)
         Me.Label3.TabIndex = 347
         Me.Label3.Text = "Id Detalle"
         '
-        'inexistente
-        '
-        Me.inexistente.AutoSize = True
-        Me.inexistente.BackColor = System.Drawing.SystemColors.Control
-        Me.inexistente.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.inexistente.LinkColor = System.Drawing.Color.Red
-        Me.inexistente.Location = New System.Drawing.Point(363, 392)
-        Me.inexistente.Name = "inexistente"
-        Me.inexistente.Size = New System.Drawing.Size(270, 20)
-        Me.inexistente.TabIndex = 392
-        Me.inexistente.TabStop = True
-        Me.inexistente.Text = "NO SE AGREGARON ELEMENTOS"
-        '
         'datalistado
         '
         Me.datalistado.AllowUserToAddRows = False
+        Me.datalistado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.datalistado.BackgroundColor = System.Drawing.SystemColors.Control
         Me.datalistado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.datalistado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.datalistado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.datalistado.DefaultCellStyle = DataGridViewCellStyle5
-        Me.datalistado.Location = New System.Drawing.Point(129, 314)
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.datalistado.DefaultCellStyle = DataGridViewCellStyle11
+        Me.datalistado.Location = New System.Drawing.Point(129, 330)
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.datalistado.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.datalistado.RowHeadersDefaultCellStyle = DataGridViewCellStyle12
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(759, 172)
+        Me.datalistado.Size = New System.Drawing.Size(577, 172)
         Me.datalistado.TabIndex = 391
         '
         'erroricono
@@ -335,7 +323,7 @@ Partial Class frmabmpagos
         '
         'txtprecioarancel
         '
-        Me.txtprecioarancel.Location = New System.Drawing.Point(425, 24)
+        Me.txtprecioarancel.Location = New System.Drawing.Point(462, 59)
         Me.txtprecioarancel.Name = "txtprecioarancel"
         Me.txtprecioarancel.Size = New System.Drawing.Size(63, 20)
         Me.txtprecioarancel.TabIndex = 642
@@ -344,7 +332,7 @@ Partial Class frmabmpagos
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(383, 28)
+        Me.Label10.Location = New System.Drawing.Point(420, 63)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(37, 13)
         Me.Label10.TabIndex = 641
@@ -352,7 +340,7 @@ Partial Class frmabmpagos
         '
         'txtnombrearancel
         '
-        Me.txtnombrearancel.Location = New System.Drawing.Point(192, 24)
+        Me.txtnombrearancel.Location = New System.Drawing.Point(223, 59)
         Me.txtnombrearancel.Name = "txtnombrearancel"
         Me.txtnombrearancel.Size = New System.Drawing.Size(185, 20)
         Me.txtnombrearancel.TabIndex = 644
@@ -360,7 +348,7 @@ Partial Class frmabmpagos
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(113, 28)
+        Me.Label11.Location = New System.Drawing.Point(140, 63)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(44, 13)
         Me.Label11.TabIndex = 643
@@ -368,14 +356,14 @@ Partial Class frmabmpagos
         '
         'txtidarancel
         '
-        Me.txtidarancel.Location = New System.Drawing.Point(163, 24)
+        Me.txtidarancel.Location = New System.Drawing.Point(190, 59)
         Me.txtidarancel.Name = "txtidarancel"
-        Me.txtidarancel.Size = New System.Drawing.Size(25, 20)
+        Me.txtidarancel.Size = New System.Drawing.Size(29, 20)
         Me.txtidarancel.TabIndex = 645
         '
         'txtdescuento
         '
-        Me.txtdescuento.Location = New System.Drawing.Point(713, 24)
+        Me.txtdescuento.Location = New System.Drawing.Point(849, 421)
         Me.txtdescuento.Name = "txtdescuento"
         Me.txtdescuento.Size = New System.Drawing.Size(39, 20)
         Me.txtdescuento.TabIndex = 650
@@ -384,7 +372,7 @@ Partial Class frmabmpagos
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(544, 28)
+        Me.Label12.Location = New System.Drawing.Point(784, 453)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(48, 13)
         Me.Label12.TabIndex = 648
@@ -392,7 +380,7 @@ Partial Class frmabmpagos
         '
         'txtrecargo
         '
-        Me.txtrecargo.Location = New System.Drawing.Point(593, 24)
+        Me.txtrecargo.Location = New System.Drawing.Point(833, 449)
         Me.txtrecargo.Name = "txtrecargo"
         Me.txtrecargo.Size = New System.Drawing.Size(55, 20)
         Me.txtrecargo.TabIndex = 647
@@ -401,7 +389,7 @@ Partial Class frmabmpagos
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(650, 28)
+        Me.Label13.Location = New System.Drawing.Point(786, 425)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(59, 13)
         Me.Label13.TabIndex = 646
@@ -410,7 +398,7 @@ Partial Class frmabmpagos
         'txttotal
         '
         Me.txttotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txttotal.Location = New System.Drawing.Point(765, 493)
+        Me.txttotal.Location = New System.Drawing.Point(765, 473)
         Me.txttotal.Name = "txttotal"
         Me.txttotal.Size = New System.Drawing.Size(123, 29)
         Me.txttotal.TabIndex = 659
@@ -421,7 +409,7 @@ Partial Class frmabmpagos
         Me.Label17.AutoSize = True
         Me.Label17.BackColor = System.Drawing.Color.Transparent
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(712, 500)
+        Me.Label17.Location = New System.Drawing.Point(712, 480)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(44, 20)
         Me.Label17.TabIndex = 661
@@ -487,7 +475,7 @@ Partial Class frmabmpagos
         '
         Me.btnagregaralumno.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.buscar
         Me.btnagregaralumno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnagregaralumno.Location = New System.Drawing.Point(824, 68)
+        Me.btnagregaralumno.Location = New System.Drawing.Point(818, 68)
         Me.btnagregaralumno.Name = "btnagregaralumno"
         Me.btnagregaralumno.Size = New System.Drawing.Size(39, 36)
         Me.btnagregaralumno.TabIndex = 430
@@ -496,31 +484,45 @@ Partial Class frmabmpagos
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.txtcantidad)
         Me.GroupBox2.Controls.Add(Me.btnagregaritem)
-        Me.GroupBox2.Controls.Add(Me.txtdescuento)
-        Me.GroupBox2.Controls.Add(Me.Label12)
         Me.GroupBox2.Controls.Add(Me.txtidarancel)
         Me.GroupBox2.Controls.Add(Me.txtnombrearancel)
-        Me.GroupBox2.Controls.Add(Me.txtrecargo)
         Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.txtprecioarancel)
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Controls.Add(Me.Label3)
-        Me.GroupBox2.Controls.Add(Me.Label13)
         Me.GroupBox2.Controls.Add(Me.txtiddetalle)
-        Me.GroupBox2.Controls.Add(Me.btnagregararancel)
-        Me.GroupBox2.Controls.Add(Me.btnquitar)
+        Me.GroupBox2.Controls.Add(Me.btndiciembre)
+        Me.GroupBox2.Controls.Add(Me.btnmarzo)
+        Me.GroupBox2.Controls.Add(Me.btnnoviembre)
+        Me.GroupBox2.Controls.Add(Me.btnabril)
+        Me.GroupBox2.Controls.Add(Me.btnoctubre)
+        Me.GroupBox2.Controls.Add(Me.btnmayo)
+        Me.GroupBox2.Controls.Add(Me.btnseptiembre)
+        Me.GroupBox2.Controls.Add(Me.btnjunio)
+        Me.GroupBox2.Controls.Add(Me.btnagosto)
+        Me.GroupBox2.Controls.Add(Me.btnjulio)
         Me.GroupBox2.Location = New System.Drawing.Point(19, 224)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(869, 53)
+        Me.GroupBox2.Size = New System.Drawing.Size(869, 93)
         Me.GroupBox2.TabIndex = 666
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Productos"
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(549, 63)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(49, 13)
+        Me.Label4.TabIndex = 680
+        Me.Label4.Text = "Cantidad"
+        '
         'txtcantidad
         '
-        Me.txtcantidad.Location = New System.Drawing.Point(496, 24)
+        Me.txtcantidad.Location = New System.Drawing.Point(611, 59)
         Me.txtcantidad.Name = "txtcantidad"
         Me.txtcantidad.Size = New System.Drawing.Size(40, 20)
         Me.txtcantidad.TabIndex = 665
@@ -530,33 +532,143 @@ Partial Class frmabmpagos
         '
         Me.btnagregaritem.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.buscar
         Me.btnagregaritem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnagregaritem.Location = New System.Drawing.Point(824, 12)
+        Me.btnagregaritem.Location = New System.Drawing.Point(818, 44)
         Me.btnagregaritem.Name = "btnagregaritem"
         Me.btnagregaritem.Size = New System.Drawing.Size(39, 38)
         Me.btnagregaritem.TabIndex = 664
         Me.btnagregaritem.UseVisualStyleBackColor = True
         '
+        'btndiciembre
+        '
+        Me.btndiciembre.BackColor = System.Drawing.Color.LightGray
+        Me.btndiciembre.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btndiciembre.Location = New System.Drawing.Point(774, 17)
+        Me.btndiciembre.Name = "btndiciembre"
+        Me.btndiciembre.Size = New System.Drawing.Size(83, 21)
+        Me.btndiciembre.TabIndex = 679
+        Me.btndiciembre.Text = "Diciembre"
+        Me.btndiciembre.UseVisualStyleBackColor = False
+        '
+        'btnmarzo
+        '
+        Me.btnmarzo.BackColor = System.Drawing.Color.LightGray
+        Me.btnmarzo.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnmarzo.Location = New System.Drawing.Point(9, 17)
+        Me.btnmarzo.Name = "btnmarzo"
+        Me.btnmarzo.Size = New System.Drawing.Size(83, 21)
+        Me.btnmarzo.TabIndex = 670
+        Me.btnmarzo.Text = "Marzo"
+        Me.btnmarzo.UseVisualStyleBackColor = False
+        '
+        'btnnoviembre
+        '
+        Me.btnnoviembre.BackColor = System.Drawing.Color.LightGray
+        Me.btnnoviembre.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnnoviembre.Location = New System.Drawing.Point(689, 17)
+        Me.btnnoviembre.Name = "btnnoviembre"
+        Me.btnnoviembre.Size = New System.Drawing.Size(83, 21)
+        Me.btnnoviembre.TabIndex = 678
+        Me.btnnoviembre.Text = "Noviembre"
+        Me.btnnoviembre.UseVisualStyleBackColor = False
+        '
+        'btnabril
+        '
+        Me.btnabril.BackColor = System.Drawing.Color.LightGray
+        Me.btnabril.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnabril.Location = New System.Drawing.Point(94, 17)
+        Me.btnabril.Name = "btnabril"
+        Me.btnabril.Size = New System.Drawing.Size(83, 21)
+        Me.btnabril.TabIndex = 671
+        Me.btnabril.Text = "Abril"
+        Me.btnabril.UseVisualStyleBackColor = False
+        '
+        'btnoctubre
+        '
+        Me.btnoctubre.BackColor = System.Drawing.Color.LightGray
+        Me.btnoctubre.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnoctubre.Location = New System.Drawing.Point(604, 17)
+        Me.btnoctubre.Name = "btnoctubre"
+        Me.btnoctubre.Size = New System.Drawing.Size(83, 21)
+        Me.btnoctubre.TabIndex = 677
+        Me.btnoctubre.Text = "Octubre"
+        Me.btnoctubre.UseVisualStyleBackColor = False
+        '
+        'btnmayo
+        '
+        Me.btnmayo.BackColor = System.Drawing.Color.LightGray
+        Me.btnmayo.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnmayo.Location = New System.Drawing.Point(179, 17)
+        Me.btnmayo.Name = "btnmayo"
+        Me.btnmayo.Size = New System.Drawing.Size(83, 21)
+        Me.btnmayo.TabIndex = 672
+        Me.btnmayo.Text = "Mayo"
+        Me.btnmayo.UseVisualStyleBackColor = False
+        '
+        'btnseptiembre
+        '
+        Me.btnseptiembre.BackColor = System.Drawing.Color.LightGray
+        Me.btnseptiembre.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnseptiembre.Location = New System.Drawing.Point(519, 17)
+        Me.btnseptiembre.Name = "btnseptiembre"
+        Me.btnseptiembre.Size = New System.Drawing.Size(83, 21)
+        Me.btnseptiembre.TabIndex = 676
+        Me.btnseptiembre.Text = "Septiembre"
+        Me.btnseptiembre.UseVisualStyleBackColor = False
+        '
+        'btnjunio
+        '
+        Me.btnjunio.BackColor = System.Drawing.Color.LightGray
+        Me.btnjunio.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnjunio.Location = New System.Drawing.Point(264, 17)
+        Me.btnjunio.Name = "btnjunio"
+        Me.btnjunio.Size = New System.Drawing.Size(83, 21)
+        Me.btnjunio.TabIndex = 673
+        Me.btnjunio.Text = "Junio"
+        Me.btnjunio.UseVisualStyleBackColor = False
+        '
+        'btnagosto
+        '
+        Me.btnagosto.BackColor = System.Drawing.Color.LightGray
+        Me.btnagosto.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnagosto.Location = New System.Drawing.Point(434, 17)
+        Me.btnagosto.Name = "btnagosto"
+        Me.btnagosto.Size = New System.Drawing.Size(83, 21)
+        Me.btnagosto.TabIndex = 675
+        Me.btnagosto.Text = "Agosto"
+        Me.btnagosto.UseVisualStyleBackColor = False
+        '
+        'btnjulio
+        '
+        Me.btnjulio.BackColor = System.Drawing.Color.LightGray
+        Me.btnjulio.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnjulio.Location = New System.Drawing.Point(349, 17)
+        Me.btnjulio.Name = "btnjulio"
+        Me.btnjulio.Size = New System.Drawing.Size(83, 21)
+        Me.btnjulio.TabIndex = 674
+        Me.btnjulio.Text = "Julio"
+        Me.btnjulio.UseVisualStyleBackColor = False
+        '
         'btnagregararancel
         '
-        Me.btnagregararancel.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.btnAgregar1
+        Me.btnagregararancel.BackColor = System.Drawing.Color.Transparent
+        Me.btnagregararancel.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.add1
         Me.btnagregararancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnagregararancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnagregararancel.Location = New System.Drawing.Point(758, 22)
+        Me.btnagregararancel.Location = New System.Drawing.Point(787, 323)
         Me.btnagregararancel.Name = "btnagregararancel"
-        Me.btnagregararancel.Size = New System.Drawing.Size(27, 25)
+        Me.btnagregararancel.Size = New System.Drawing.Size(102, 41)
         Me.btnagregararancel.TabIndex = 651
-        Me.btnagregararancel.UseVisualStyleBackColor = True
+        Me.btnagregararancel.UseVisualStyleBackColor = False
         '
         'btnquitar
         '
-        Me.btnquitar.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.btnquitar
+        Me.btnquitar.BackColor = System.Drawing.Color.Transparent
+        Me.btnquitar.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.quitar
         Me.btnquitar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnquitar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnquitar.Location = New System.Drawing.Point(790, 22)
+        Me.btnquitar.Location = New System.Drawing.Point(787, 369)
         Me.btnquitar.Name = "btnquitar"
-        Me.btnquitar.Size = New System.Drawing.Size(27, 25)
+        Me.btnquitar.Size = New System.Drawing.Size(102, 41)
         Me.btnquitar.TabIndex = 663
-        Me.btnquitar.UseVisualStyleBackColor = True
+        Me.btnquitar.UseVisualStyleBackColor = False
         '
         'lblhora
         '
@@ -585,113 +697,13 @@ Partial Class frmabmpagos
         'Timer1
         '
         '
-        'btnmarzo
-        '
-        Me.btnmarzo.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnmarzo.Location = New System.Drawing.Point(129, 287)
-        Me.btnmarzo.Name = "btnmarzo"
-        Me.btnmarzo.Size = New System.Drawing.Size(76, 21)
-        Me.btnmarzo.TabIndex = 670
-        Me.btnmarzo.Text = "Marzo"
-        Me.btnmarzo.UseVisualStyleBackColor = True
-        '
-        'btnabril
-        '
-        Me.btnabril.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnabril.Location = New System.Drawing.Point(205, 287)
-        Me.btnabril.Name = "btnabril"
-        Me.btnabril.Size = New System.Drawing.Size(76, 21)
-        Me.btnabril.TabIndex = 671
-        Me.btnabril.Text = "Abril"
-        Me.btnabril.UseVisualStyleBackColor = True
-        '
-        'btnmayo
-        '
-        Me.btnmayo.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnmayo.Location = New System.Drawing.Point(281, 287)
-        Me.btnmayo.Name = "btnmayo"
-        Me.btnmayo.Size = New System.Drawing.Size(76, 21)
-        Me.btnmayo.TabIndex = 672
-        Me.btnmayo.Text = "Mayo"
-        Me.btnmayo.UseVisualStyleBackColor = True
-        '
-        'btnjunio
-        '
-        Me.btnjunio.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnjunio.Location = New System.Drawing.Point(357, 287)
-        Me.btnjunio.Name = "btnjunio"
-        Me.btnjunio.Size = New System.Drawing.Size(76, 21)
-        Me.btnjunio.TabIndex = 673
-        Me.btnjunio.Text = "Junio"
-        Me.btnjunio.UseVisualStyleBackColor = True
-        '
-        'btnjulio
-        '
-        Me.btnjulio.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnjulio.Location = New System.Drawing.Point(433, 287)
-        Me.btnjulio.Name = "btnjulio"
-        Me.btnjulio.Size = New System.Drawing.Size(76, 21)
-        Me.btnjulio.TabIndex = 674
-        Me.btnjulio.Text = "Julio"
-        Me.btnjulio.UseVisualStyleBackColor = True
-        '
-        'btnagosto
-        '
-        Me.btnagosto.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnagosto.Location = New System.Drawing.Point(509, 287)
-        Me.btnagosto.Name = "btnagosto"
-        Me.btnagosto.Size = New System.Drawing.Size(76, 21)
-        Me.btnagosto.TabIndex = 675
-        Me.btnagosto.Text = "Agosto"
-        Me.btnagosto.UseVisualStyleBackColor = True
-        '
-        'btnseptiembre
-        '
-        Me.btnseptiembre.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnseptiembre.Location = New System.Drawing.Point(585, 287)
-        Me.btnseptiembre.Name = "btnseptiembre"
-        Me.btnseptiembre.Size = New System.Drawing.Size(76, 21)
-        Me.btnseptiembre.TabIndex = 676
-        Me.btnseptiembre.Text = "Septiembre"
-        Me.btnseptiembre.UseVisualStyleBackColor = True
-        '
-        'btnoctubre
-        '
-        Me.btnoctubre.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnoctubre.Location = New System.Drawing.Point(661, 287)
-        Me.btnoctubre.Name = "btnoctubre"
-        Me.btnoctubre.Size = New System.Drawing.Size(76, 21)
-        Me.btnoctubre.TabIndex = 677
-        Me.btnoctubre.Text = "Octubre"
-        Me.btnoctubre.UseVisualStyleBackColor = True
-        '
-        'btnnoviembre
-        '
-        Me.btnnoviembre.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnnoviembre.Location = New System.Drawing.Point(737, 287)
-        Me.btnnoviembre.Name = "btnnoviembre"
-        Me.btnnoviembre.Size = New System.Drawing.Size(76, 21)
-        Me.btnnoviembre.TabIndex = 678
-        Me.btnnoviembre.Text = "Noviembre"
-        Me.btnnoviembre.UseVisualStyleBackColor = True
-        '
-        'btndiciembre
-        '
-        Me.btndiciembre.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btndiciembre.Location = New System.Drawing.Point(813, 287)
-        Me.btndiciembre.Name = "btndiciembre"
-        Me.btndiciembre.Size = New System.Drawing.Size(76, 21)
-        Me.btndiciembre.TabIndex = 679
-        Me.btndiciembre.Text = "Diciembre"
-        Me.btndiciembre.UseVisualStyleBackColor = True
-        '
         'lblsalir
         '
         Me.lblsalir.AutoSize = True
         Me.lblsalir.BackColor = System.Drawing.Color.Transparent
         Me.lblsalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblsalir.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.lblsalir.Location = New System.Drawing.Point(599, 563)
+        Me.lblsalir.Location = New System.Drawing.Point(599, 579)
         Me.lblsalir.Name = "lblsalir"
         Me.lblsalir.Size = New System.Drawing.Size(38, 13)
         Me.lblsalir.TabIndex = 685
@@ -703,7 +715,7 @@ Partial Class frmabmpagos
         Me.lblguardar.BackColor = System.Drawing.Color.Transparent
         Me.lblguardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblguardar.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.lblguardar.Location = New System.Drawing.Point(267, 563)
+        Me.lblguardar.Location = New System.Drawing.Point(267, 579)
         Me.lblguardar.Name = "lblguardar"
         Me.lblguardar.Size = New System.Drawing.Size(61, 13)
         Me.lblguardar.TabIndex = 684
@@ -712,7 +724,7 @@ Partial Class frmabmpagos
         'Button1
         '
         Me.Button1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Button1.Location = New System.Drawing.Point(19, 323)
+        Me.Button1.Location = New System.Drawing.Point(19, 339)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(94, 48)
         Me.Button1.TabIndex = 686
@@ -722,7 +734,7 @@ Partial Class frmabmpagos
         'Button2
         '
         Me.Button2.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Button2.Location = New System.Drawing.Point(19, 377)
+        Me.Button2.Location = New System.Drawing.Point(19, 393)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(94, 48)
         Me.Button2.TabIndex = 687
@@ -735,7 +747,7 @@ Partial Class frmabmpagos
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.Label1.Location = New System.Drawing.Point(516, 563)
+        Me.Label1.Location = New System.Drawing.Point(516, 579)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(57, 13)
         Me.Label1.TabIndex = 697
@@ -745,7 +757,7 @@ Partial Class frmabmpagos
         '
         Me.Button6.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.Printer
         Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button6.Location = New System.Drawing.Point(513, 500)
+        Me.Button6.Location = New System.Drawing.Point(513, 516)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(60, 60)
         Me.Button6.TabIndex = 696
@@ -766,7 +778,7 @@ Partial Class frmabmpagos
         '
         Me.btncerrar.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.Vista__68_
         Me.btncerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btncerrar.Location = New System.Drawing.Point(587, 500)
+        Me.btncerrar.Location = New System.Drawing.Point(587, 516)
         Me.btncerrar.Name = "btncerrar"
         Me.btncerrar.Size = New System.Drawing.Size(60, 60)
         Me.btncerrar.TabIndex = 681
@@ -776,7 +788,7 @@ Partial Class frmabmpagos
         '
         Me.btnguardaralta.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.guardar
         Me.btnguardaralta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnguardaralta.Location = New System.Drawing.Point(266, 500)
+        Me.btnguardaralta.Location = New System.Drawing.Point(266, 516)
         Me.btnguardaralta.Name = "btnguardaralta"
         Me.btnguardaralta.Size = New System.Drawing.Size(60, 60)
         Me.btnguardaralta.TabIndex = 680
@@ -786,7 +798,7 @@ Partial Class frmabmpagos
         '
         Me.btnguardaredicion.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.guardar
         Me.btnguardaredicion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnguardaredicion.Location = New System.Drawing.Point(266, 500)
+        Me.btnguardaredicion.Location = New System.Drawing.Point(266, 516)
         Me.btnguardaredicion.Name = "btnguardaredicion"
         Me.btnguardaredicion.Size = New System.Drawing.Size(60, 60)
         Me.btnguardaredicion.TabIndex = 683
@@ -797,7 +809,7 @@ Partial Class frmabmpagos
         '
         Me.btnguardarbaja.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.guardar
         Me.btnguardarbaja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnguardarbaja.Location = New System.Drawing.Point(266, 500)
+        Me.btnguardarbaja.Location = New System.Drawing.Point(266, 516)
         Me.btnguardarbaja.Name = "btnguardarbaja"
         Me.btnguardarbaja.Size = New System.Drawing.Size(60, 60)
         Me.btnguardarbaja.TabIndex = 682
@@ -807,7 +819,7 @@ Partial Class frmabmpagos
         'Button3
         '
         Me.Button3.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Button3.Location = New System.Drawing.Point(19, 431)
+        Me.Button3.Location = New System.Drawing.Point(19, 447)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(94, 48)
         Me.Button3.TabIndex = 688
@@ -817,7 +829,8 @@ Partial Class frmabmpagos
         'Lblcomprobante
         '
         Me.Lblcomprobante.AutoSize = True
-        Me.Lblcomprobante.Location = New System.Drawing.Point(756, 75)
+        Me.Lblcomprobante.BackColor = System.Drawing.Color.Transparent
+        Me.Lblcomprobante.Location = New System.Drawing.Point(765, 82)
         Me.Lblcomprobante.Name = "Lblcomprobante"
         Me.Lblcomprobante.Size = New System.Drawing.Size(0, 13)
         Me.Lblcomprobante.TabIndex = 664
@@ -826,7 +839,7 @@ Partial Class frmabmpagos
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Location = New System.Drawing.Point(743, 55)
+        Me.Label8.Location = New System.Drawing.Point(745, 62)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(85, 13)
         Me.Label8.TabIndex = 702
@@ -836,7 +849,7 @@ Partial Class frmabmpagos
         '
         Me.Label14.AutoSize = True
         Me.Label14.BackColor = System.Drawing.Color.Transparent
-        Me.Label14.Location = New System.Drawing.Point(746, 12)
+        Me.Label14.Location = New System.Drawing.Point(766, 19)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(43, 13)
         Me.Label14.TabIndex = 704
@@ -845,7 +858,8 @@ Partial Class frmabmpagos
         'lblnumcaja
         '
         Me.lblnumcaja.AutoSize = True
-        Me.lblnumcaja.Location = New System.Drawing.Point(762, 31)
+        Me.lblnumcaja.BackColor = System.Drawing.Color.Transparent
+        Me.lblnumcaja.Location = New System.Drawing.Point(762, 38)
         Me.lblnumcaja.Name = "lblnumcaja"
         Me.lblnumcaja.Size = New System.Drawing.Size(13, 13)
         Me.lblnumcaja.TabIndex = 703
@@ -857,33 +871,29 @@ Partial Class frmabmpagos
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Sistema_CECULD.My.Resources.Resources.depositphotos_38740641_stock_photo_white_background
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(900, 588)
+        Me.ClientSize = New System.Drawing.Size(900, 598)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.lblnumcaja)
+        Me.Controls.Add(Me.txtdescuento)
         Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Lblcomprobante)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.txtrecargo)
         Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.btnagregararancel)
         Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btnquitar)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lblsalir)
+        Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.lblguardar)
         Me.Controls.Add(Me.btncerrar)
         Me.Controls.Add(Me.btnguardaralta)
         Me.Controls.Add(Me.btnguardaredicion)
         Me.Controls.Add(Me.btnguardarbaja)
-        Me.Controls.Add(Me.btndiciembre)
-        Me.Controls.Add(Me.btnnoviembre)
-        Me.Controls.Add(Me.btnoctubre)
-        Me.Controls.Add(Me.btnseptiembre)
-        Me.Controls.Add(Me.btnagosto)
-        Me.Controls.Add(Me.btnjulio)
-        Me.Controls.Add(Me.btnjunio)
-        Me.Controls.Add(Me.btnmayo)
-        Me.Controls.Add(Me.btnabril)
-        Me.Controls.Add(Me.btnmarzo)
         Me.Controls.Add(Me.lblhora)
         Me.Controls.Add(Me.lblfecha)
         Me.Controls.Add(Me.GroupBox2)
@@ -892,7 +902,6 @@ Partial Class frmabmpagos
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.txttotal)
         Me.Controls.Add(Me.lblnuevo)
-        Me.Controls.Add(Me.inexistente)
         Me.Controls.Add(Me.datalistado)
         Me.Name = "frmabmpagos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -909,7 +918,6 @@ Partial Class frmabmpagos
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents inexistente As System.Windows.Forms.LinkLabel
     Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
     Public WithEvents txtdni As System.Windows.Forms.TextBox
     Public WithEvents Label43 As System.Windows.Forms.Label
@@ -980,4 +988,5 @@ Partial Class frmabmpagos
     Friend WithEvents txtcantidad As NumericUpDown
     Public WithEvents Label14 As Label
     Public WithEvents lblnumcaja As Label
+    Public WithEvents Label4 As Label
 End Class
